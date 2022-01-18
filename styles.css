@@ -1,0 +1,49 @@
+p {
+  color: "white";
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.1em;
+  position: relative;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: white;
+}
+.navbar .navbar-nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  color: transparent;
+  width: 0%;
+  content: ".";
+  height: 3px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.banner-btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.banner-btn:hover {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: white;
+}
+
+.banner-btn:hover a span {
+  color: black;
+}
+
+.banner-btn span {
+  color: white;
+}
