@@ -4,18 +4,19 @@ p {
 
 .navbar .navbar-nav .nav-link {
   color: white;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   position: relative;
-}
-.navbar .navbar-nav .nav-link:hover {
-  color: white;
+  /* padding: 10px 0px; */
+  margin: 0px 20px;
 }
 .navbar .navbar-nav .nav-link::after {
   position: absolute;
   bottom: 0;
+  /* top: 2px; */
   left: 0;
   right: 0;
   margin: auto;
+  margin-bottom: -7px;
   background-color: white;
   color: transparent;
   width: 0%;
@@ -23,27 +24,33 @@ p {
   height: 3px;
   transition: all 0.5s;
 }
+.navbar .active .nav-link::after {
+  width: 100%;
+}
 .navbar .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
 
-.banner-btn {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+.border-btn {
+  border: solid 1px white;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 13px 40px;
+  margin: 50px 30px;
 }
-
-.banner-btn:hover {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+.border-btn:hover {
   background-color: white;
+  color: black;
 }
-
-.banner-btn:hover a span {
+.banner-btn .active {
+  background-color: white;
   color: black;
 }
 
-.banner-btn span {
-  color: white;
+.vertical-line {
+  position: inherit;
+  height: 250px;
+  border-left: 1px solid #757575;
+  left: 70%;
 }
