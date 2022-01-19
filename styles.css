@@ -50,7 +50,8 @@ p {
 
 .vertical-line {
   position: inherit;
-  height: 250px;
+  height: 200px;
   border-left: 1px solid #757575;
   left: 70%;
+  bottom: 10%;
 }
