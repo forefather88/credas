@@ -30,6 +30,9 @@ p {
 .navbar .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+.navbar span {
+  font-family: Montserrat;
+}
 
 .border-btn {
   border: solid 1px white;
@@ -64,12 +67,19 @@ p {
 }
 .left {
   width: 50%;
+  display: flex;
 }
 .right {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
   box-shadow: 5px 10px 5px #e8e8e8;
+  padding: 80px;
+}
+
+.carousel-indicators li {
+  background-color: #c7c7c7 !important;
+}
+
+.carousel-indicators active {
+  background-color: #8b8c8b !important;
 }
